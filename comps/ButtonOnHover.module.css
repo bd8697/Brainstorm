@@ -1,18 +1,16 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Comfortaa, Roboto, sans-serif;
+.buttonOnHover {
+    position: absolute;
+    z-index: 2;
 }
 
-* {
-  box-sizing: border-box;
+.buttonOnHover > div {
+    overflow: visible !important;
 }
 
-body, html { 
-  overflow: hidden;
-  height: 100%;
-  background-color: rgb(15, 15, 15)
+.btnUI {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .starImg { 

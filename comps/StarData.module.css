@@ -1,0 +1,36 @@
+.dataContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.data {
+    z-index: 2;
+    margin: 0;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 50%;
+    user-select: none;
+}
+
+.score {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+}
+
+.data:hover {
+    overflow: visible;
+    word-wrap:break-word;
+  }
+
+.big {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tooltip {
+    font-size: 1.5em;
+}

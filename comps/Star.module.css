@@ -1,0 +1,51 @@
+.motion {
+    position: absolute;
+    overflow: visible;
+}
+
+.dataContainer {
+    position: absolute;
+    left: -25%;
+    width: 150%;
+    height: 100%;
+}
+
+.trueImg { 
+  /* we need the optimized rendering of the next.js Image component, but have to override it's styles, and since next doesn't identify the elements inside <Image> in any way (cause why would you? -_-) it gets ugly.  */
+  width: 200% !important; 
+  height: 200% !important;
+  margin: 0 !important;
+  max-width: 200% !important;
+  max-height: 200% !important;
+  transform: translate(-25%, -25%);
+  user-select: none;
+  pointer-events: none;
+}
+
+.imgOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.star1 {
+    mask:url("../assets/img/star1.png") center/contain;
+}
+
+.star2 {
+    mask:url("../assets/img/star2.png") center/contain;
+}
+
+.imgContainer {
+    position: absolute;
+}
+
+.starImg {
+    top: 50%;
+    width: 200%;
+    transform: translate(-25%, -50%);
+}
+
+.imgContainer > div {
+    overflow: visible !important;
+}
